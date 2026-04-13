@@ -1,114 +1,168 @@
-<h1 align="center"> 🚨 AI-powered phishing detection system 🚨 </h1>
+# AI-Powered Phishing Detection System
+## Introduction
+### Project Overview:
+This project was designed to do the following:
+1.	Analyze email text content.
+2.	Extract and evaluate URLs.
+3.	Classify emails as phishing or legitimate 
+4.	Provide real-time predictions through an interactive web interface.
 
-![image](https://github.com/user-attachments/assets/cdfb7afc-6eeb-4fdb-9b26-6bcedc247ff4)
+### Objectives:
+By completing this project, I learnt the following:
+1.	To detect phishing emails using machine learning techniques.
+2.	To analyze both email text and URLs for suspicious patterns.
+3.	To build an interactive and user-friendly interface. 
+4.	To improve accuracy using labeled phishing datasets.
+5.	To demonstrate practical application of AI in cybersecurity.
 
+### Features:
+1.	Email Body Analysis: Uses text processing to identify phishing patterns.
+2.	URL Scanning: Extracts and evaluates URLs within the email to detect malicious links.
+3.	Machine Learning: Trained with labeled phishing data to make predictions on email content.
+4.	Interactive UI: Built with Streamlit for real-time predictions.
 
-##  ⚙️ About the Project 
+## Technologies Used
+1.	Python: Core programming language 
+2.	Streamlit: Web interface for user interaction 
+3.	scikit-learn: Machine learning model building 
+4.	pandas: Data manipulation and preprocessing 
+5.	nltk: Natural language processing 
+6.	Requests: HTTP requests for URL analysis 
+7.	BeautifulSoup: Web scraping and URL inspection
 
-An AI-powered phishing detection system using machine learning to classify emails as **phishing** or **safe**. Built using **Python**, **Streamlit**, and **scikit-learn**, this system analyzes email bodies and URLs to detect phishing attempts.
+## Installation and Project Setup
+### Prerequisites:
+1.	Python 3.9+
+2.	VS Code
+3.	Git 
+4.	4GB RAM minimum
+5.	Windows, macOS, or Linux
 
-[![Phishing Detection](https://img.shields.io/badge/Phishing%20Detection-Active-brightgreen)](https://ai-powered-phishing-detection-system-ples7i6bq2tzkaguiykzzt.streamlit.app/)
+### Step 1: Create Project
+Within the terminal, I created the project.
+Commands Used
+cd onedrive
+cd desktop
+mkdir Phishing_Detection_System
+cd Phishing_Detection_System
 
-## 🚀 Features
+ 
+Screenshot of Output
+ <img width="940" height="375" alt="image" src="https://github.com/user-attachments/assets/08f5f239-17d9-4cfd-83f7-7c492e2821c7" />
 
-- **Email Body Analysis**: Uses text processing to identify phishing patterns.
-- **URL Scanning**: Extracts and evaluates URLs within the email to detect malicious links.
-- **Machine Learning**: Trained with labeled phishing data to make predictions on email content.
-- **Interactive UI**: Built with Streamlit for real-time predictions.
+Figure 1: Create Project
 
-## 🧑‍💻 Technologies Used
+### Step 2: Clone Repository 
+I then cloned the following repository in the created folder. 
 
-- **Python** 🐍
-- **Streamlit** 🌐
-- **scikit-learn** 🤖
-- **pandas** 📊
-- **nltk** 🧠
-- **Requests** 🌍
-- **BeautifulSoup** 🍲
+Commands Used
+git clone https://github.com/GauravGhandat-23/AI-Powered-Phishing-Detection-System 
 
-## 🎯 Installation & Setup
+Screenshot of Output
 
-1. Clone the repository
-   
-   ```bash
-   git clone https://github.com/yourusername/AI-Powered-Phishing-Detection-System.git
-   cd AI-Powered-Phishing-Detection-System
+ <img width="940" height="247" alt="image" src="https://github.com/user-attachments/assets/be1b41f1-2982-4199-96cb-adbd35f0cd1e" />
 
-2. Install Dependencies
-   Create and activate a virtual environment, then install required packages:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate   # For macOS/Linux
-   venv\Scripts\activate      # For Windows
+Figure 2: Clone Repository
 
-   pip install -r requirements.txt
+ 
+### Step 3: Navigate to the Project
+Commands Used
+cd AI-Powered-Phishing-Detection-System
 
-3. Run the App
-   Start the Streamlit app to launch the phishing detection system:
-   ```bash
-   streamlit run phishing_detection.py
+Screenshot of Output
+ <img width="940" height="513" alt="image" src="https://github.com/user-attachments/assets/9ea24c39-67ed-476e-bf61-d700d06b678b" />
 
-4. Upload Dataset for Training (Optional)
-   Upload a CSV file with columns email_body (content of the email) and label (1 for phishing, 0 for safe) to train the model.
+Figure 3: Project Navigation
 
-🔍 How to Use
+### Step 4: Create and Activate Virtual Environment
+I created the virtual environment to isolate project dependencies from my system Python.
 
-- **Training the Model**: Upload a CSV file containing emails labeled as phishing or safe.
-- **Prediction**: Enter the body of an email, and the system will classify it as phishing or safe.
+Commands Used
+python -m venv venv
+venv\Scripts\activate
 
-Example Email to Test:
+ 
+Screenshot of Output
+ <img width="940" height="148" alt="image" src="https://github.com/user-attachments/assets/2af420df-6346-4aa0-8fae-5a0c19a15686" />
 
-- **Phishing Email**:
-  
-  ```bash
-  Congratulations! You've won a $1000 gift card. Click here to claim your prize: http://phishing.com
+Figure 4: Virtual Environment
 
-- **Safe Email**:
+### Step 5: Install the Dependencies
+here the following was installed: (along with 40+ other packages)
+1.	pandas
+2.	scikit-learn
+3.	streamlit
+4.	nltk
+5.	beautifulsoup4
+6.	numpy
+7.	scipy 
 
-  ```bash
-  Hey, just checking in on our project. Let me know your availability for a meeting.
+Commands Used
+pip install -r requirements.txt
 
-5. Check Prediction
-   Click Check Phishing to see the prediction results for the email you entered.
+Screenshot of Output
+ <img width="940" height="342" alt="image" src="https://github.com/user-attachments/assets/ccfec4da-24d5-41b8-a72b-97832ff11afe" />
+<img width="940" height="453" alt="image" src="https://github.com/user-attachments/assets/a8dd14bc-0c4f-4873-a3a3-6e7fb470d79a" />
 
-## 📊 Results
+Figure 5: Installed Dependencies
 
-The system will display whether the email is a phishing attempt or safe based on its body content and URL features.
+### Step 6: Launch the Application 
+1.	Here I launched the application, then pressed enter.
+2.	http://localhost:8501/ opened in a web browser.
 
-## 🛠️ Contributing
+Commands Used
+streamlit run phishing_detection.py
 
-Contributions are welcome! If you'd like to improve the system or add new features, feel free to fork the repository and submit a pull request.
+Screenshot of Output
+ <img width="940" height="287" alt="image" src="https://github.com/user-attachments/assets/6b1f2223-0eab-47df-92c0-c0eec45c56a3" />
+<img width="569" height="597" alt="image" src="https://github.com/user-attachments/assets/26d39f38-9826-4959-95a7-f48611618cd8" />
 
-## 🙌 Acknowledgements
+Figure 6: Launched Application
 
-- Streamlit for creating the amazing interface.
-- scikit-learn for machine learning tools.
-- Shields.io for badges.
-- FontAwesome for awesome icons.
+ 
+## Implementation 
+### Step 1: Test a Phishing Email
+Within the browser, I entered the following in the “Enter the Email Body to Check:” body.
 
-## 💻 Preview 
+Text Entered
+Congratulations! You've won a $1000 gift card. Click here to claim your prize: http://phishing.com
 
-## Phishing Email:
+Screenshot of Output
+ <img width="648" height="275" alt="image" src="https://github.com/user-attachments/assets/b8b6c2d8-1a14-4ab7-860a-e2f0d11f3f98" />
 
-![test 1](https://github.com/user-attachments/assets/d1bdae97-ee19-4ac1-bd3f-87b98bad89b8)
+Figure 7: Phishing Email
 
-## Safe Email:
+### Step 2: Test a Safe Email
+Within the browser, I entered the following in the “Enter the Email Body to Check:” body.
 
-![test 2](https://github.com/user-attachments/assets/dcef2e5c-01d8-4fb3-9343-6e73d7cb3588)
+Text Entered
+Hi there, this is a reminder about ort team meeting tomorrow at 2 PM in Conference Room B. Please bring your project updates.
 
+ 
+Screenshot of Output
+ <img width="546" height="349" alt="image" src="https://github.com/user-attachments/assets/2eb1595b-3e7e-4d07-b1a3-876460d56a00" />
 
-## 🌐 Connect with Me 
+Figure 8: Safe Email
 
-- 📧 [Email](mailto:gauravghandat12@gmail.com)
-- 💼 [LinkedIn](www.linkedin.com/in/gaurav-ghandat-68a5a22b4)
+### Step 3: Test a Sophisticated Email
+Within the browser, I entered the following in the “Enter the Email Body to Check:” body.
 
+Text Entered
+Sophisticated
+Hello Andrey,
 
+I hope this email finds you well. I'm reaching out from IT regarding 
+mandatory security updates. We've detected unusual activity on your account.
 
+Please use this secure link: https://company-portal-secure.com/login
 
+Best regards, IT Security Team
 
+ 
+Screenshot of Output
+ <img width="646" height="358" alt="image" src="https://github.com/user-attachments/assets/069bb60a-e118-4969-b02b-abab3e6317f1" />
 
+Figure 9: Sophisticated Email
 
-
-
-
-   
+## References 
+(Andycarsan, 2025)
